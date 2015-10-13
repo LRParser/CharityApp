@@ -1,0 +1,1 @@
+An app to facilitate opening links to Credit Card Terminal
