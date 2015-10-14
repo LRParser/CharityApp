@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Charity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lef-qi-FtJ">
+                                <rect key="frame" x="16" y="327" width="382" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lef-qi-FtJ" secondAttribute="height" multiplier="191:51" id="HhI-LP-Uwj"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="donate25.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donate25:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a9l-S7-FvW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Am-uv-hrd">
+                                <rect key="frame" x="16" y="223" width="382" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Am-uv-hrd" secondAttribute="height" multiplier="191:52" id="UWm-xv-qeZ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="donate100.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donate100:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bcx-fz-oUM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-U6-f1k">
+                                <rect key="frame" x="16" y="143" width="382" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5lf-U6-f1k" secondAttribute="height" multiplier="568:119" id="pLf-JC-3te"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="donate500.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donate500:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="85C-H1-LM2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qj-7c-SEZ">
+                                <rect key="frame" x="16" y="429" width="382" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Qj-7c-SEZ" secondAttribute="height" multiplier="191:54" id="gKe-he-7a5"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="donate5000.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donate5000:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dYM-Kz-jHL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gt0-lJ-hnT">
+                                <rect key="frame" x="16" y="20" width="382" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gt0-lJ-hnT" secondAttribute="height" multiplier="560:180" id="oZ7-E8-5aE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="donate250.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donate250:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hKe-ff-wQv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gt0-lJ-hnT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="4Cp-Mh-AoV"/>
+                            <constraint firstItem="0Am-uv-hrd" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Au1-Ca-4kR"/>
+                            <constraint firstItem="1Qj-7c-SEZ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Ee2-Ty-StT"/>
+                            <constraint firstItem="1Qj-7c-SEZ" firstAttribute="top" secondItem="Lef-qi-FtJ" secondAttribute="bottom" id="I2u-sd-PBT"/>
+                            <constraint firstItem="Lef-qi-FtJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="O8g-zt-IWT"/>
+                            <constraint firstItem="5lf-U6-f1k" firstAttribute="top" secondItem="Gt0-lJ-hnT" secondAttribute="bottom" id="PzJ-G4-aZP"/>
+                            <constraint firstItem="Lef-qi-FtJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="SD1-5V-agf"/>
+                            <constraint firstItem="5lf-U6-f1k" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="XKp-el-atp"/>
+                            <constraint firstItem="Gt0-lJ-hnT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="aMx-MI-afj"/>
+                            <constraint firstItem="5lf-U6-f1k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="boM-hE-OFu"/>
+                            <constraint firstItem="Gt0-lJ-hnT" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cy5-nm-jLu"/>
+                            <constraint firstItem="0Am-uv-hrd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="iOK-pd-tVW"/>
+                            <constraint firstItem="Lef-qi-FtJ" firstAttribute="top" secondItem="0Am-uv-hrd" secondAttribute="bottom" id="iRt-ch-ZPZ"/>
+                            <constraint firstItem="0Am-uv-hrd" firstAttribute="top" secondItem="5lf-U6-f1k" secondAttribute="bottom" id="x1n-iP-lco"/>
+                            <constraint firstItem="1Qj-7c-SEZ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="xz4-II-9x6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="donate100.png" width="720" height="157"/>
+        <image name="donate25.png" width="720" height="159"/>
+        <image name="donate250.png" width="720" height="319"/>
+        <image name="donate500.png" width="720" height="161"/>
+        <image name="donate5000.png" width="720" height="160"/>
+    </resources>
+</document>
