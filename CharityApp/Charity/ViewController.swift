@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+     
     func donateMoney(amount: Int)
     {
         let customURL = NSURL(string:"com-innerfence-ccterminal://charge/1.0.0/?amount=\(amount)")
@@ -39,24 +39,48 @@ class ViewController: UIViewController {
         
         let chargeRequest: IFChargeRequest = IFChargeRequest()
         
-        chargeRequest.amount = "250"
+        chargeRequest.amount = "250.00";
+        chargeRequest.setReturnURL("com-swifttest-Charity://", withExtraParams: nil);
         
         chargeRequest.submit()
     }
     
     @IBAction func donate500(sender: AnyObject) {
-        self.donateMoney(500)
+        
+        let chargeRequest: IFChargeRequest = IFChargeRequest()
+        
+        chargeRequest.amount = "500.00";
+        chargeRequest.setReturnURL("com-swifttest-Charity://", withExtraParams: nil);
+        
+        chargeRequest.submit()
+
     }
     
     @IBAction func donate100(sender: AnyObject) {
-        self.donateMoney(100)
+        let chargeRequest: IFChargeRequest = IFChargeRequest()
+        
+        chargeRequest.amount = "100.00";
+        chargeRequest.setReturnURL("com-swifttest-Charity://", withExtraParams: nil);
+        
+        chargeRequest.submit()
     }
     
     @IBAction func donate25(sender: AnyObject) {
-        self.donateMoney(25)
+        
+        let chargeRequest: IFChargeRequest = IFChargeRequest()
+        
+        chargeRequest.amount = "25.00";
+        chargeRequest.setReturnURL("com-swifttest-Charity://", withExtraParams: nil);
+        
+        chargeRequest.submit()
     }
     @IBAction func donate5000(sender: AnyObject) {
-        self.donateMoney(5000)
+        let chargeRequest: IFChargeRequest = IFChargeRequest()
+        
+        chargeRequest.amount = "5000.00";
+        chargeRequest.setReturnURL("com-swifttest-Charity://", withExtraParams: nil);
+        
+        chargeRequest.submit()
     }
 }
 
